@@ -3,20 +3,6 @@
 Cloud Files CDN requires files to be uploaded to a Cloud Files container. Then you enable the CDN on that container.
 
 Rackspace CDN just requires a web server, in any location, to serve content.  This could include Cloud Servers, Dedicated Servers (with a Cloud Account), or any other system internal or external to Rackspace.
-
-Comparison:
-
-Rackspace CDN                             Cloud Files CDN
-Price tiered by region + request fees     Price Tiered with no regions, no request fees
-No need to change website code            Requires code changes to a website
-Improved features:  Custom SSL, Access    Limited purging 
-Controls, Unlimited Purges
-Features for static and dynamic content   No custom SSL
-Designed for full site delivery	          Acceleration for static assets
-Available for use with any cloud or       No access controls
-dedicated server with public access
-Assets automatically discovered in        No "full site" delivery
-origin when requested
   
 ### What are the new features?
 ### How do I move from Cloud Files CDN to Rackspace CDN?
