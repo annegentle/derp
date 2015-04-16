@@ -9,7 +9,7 @@ Rackspace CDN just requires a web server, in any location, to serve content.  Th
 **Powered by Akamai – A Best in Class Content Delivery Network**
 
 Using Akamai’s industry leading network, Rackspace employs a custom map of over 200 edge locations across six continents, designed to meet the specific needs of Rackspace’s global customer footprint.  This map includes 77 North American locations, 36 European regions, 73 Asian, Middle Eastern and Oceania regions, and 15 South America regions.
- 
+
 **Instant Provisioning**
 
 Rackspace CDN service can be turned on in seconds, through the Rackspace Cloud Control Panel, or via the REST API and language bindings.  No professional services, ticket requests, or phone calls are needed to get your site up and running on one of the world’s fastest CDN networks.  
@@ -59,6 +59,7 @@ Rackspace plans to migrate customers from Cloud Files CDN to Rackspace CDN.
 ### Control Panel overview
 
 **How to set up a new CDN service**
+
 1. You need your own DNS Domain name.  Rackspace CDN (CDNaaS) does not provide you with the domain rackcdn.com like Cloud Files CDN does.  This might change in the future.  In this example, I will use 'racked.me' as my domain, and 'cdn.racked.me' as my DNS CName.
 
 2. Go to the CDN option in REACH under Storage.
