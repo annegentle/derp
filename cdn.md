@@ -50,7 +50,6 @@ Rackspace CDN supports content TTLs (time to live) in seconds - all the way down
 
 We know that web applications contain different types of data that require multiple edge rules.  For that reason, Rackspace CDN will allow you implement edge rules based on resource path, meaning your rules can apply to multiple levels of granularity, from the entire site to a specific file. 
 
-
 ### How do I move from Cloud Files CDN to Rackspace CDN?
 
 Rackspace will help customers migrate from Cloud Files CDN to Rackspace CDN. More information will be available soon.
@@ -123,12 +122,19 @@ Following are some basic use cases for Rackspace CDN:
 
 9. A customer has their own domain name and wants to enable CDN to enable their website. They want to set rules on who can access their cached content.
 
-
 Additional use cases are described in the following sections.
 
-### Static asset compilation for a web app?
+### Using our CDN with your favorite web framework
 
-### Ruby on Rails?
+#### Ruby on Rails
+
+Simply create a new cdn service and you will be given a url that you can use with rails. in your `production.rb` file, add the following:
+
+`config.action_controller.asset_host = 'rackspace_cdn_url'`
+
+more info can be found here: http://guides.rubyonrails.org/asset_pipeline.html#cdns
+
+#### Django?
 
 ### Blogs and DB-powered content
 
