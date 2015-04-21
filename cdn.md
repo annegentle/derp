@@ -81,14 +81,23 @@ Currently, there is no CLI for Rackspace CDN.
     Note: Key issue, your cert has to be signed by the Akamai CA
 
 ## Known Limitations
+
 ### Unclear (SSL?)
 
 ## Basic Use Cases for Rackspace CDN
 Basic use cases for Rackspace CDN are described at https://one.rackspace.com/display/atlanta/Cloud+CDN+Use+Cases. Additional use cases are described below.
 
-### Static asset compilation for a web app?
+### Using our CDN with your favorite web framework:
 
-### Ruby on Rails?
+#### Ruby on Rails
+
+Simply create a new cdn service and you will be given a url that you can use with rails. in your `production.rb` file, add the following:
+
+`config.action_controller.asset_host = 'rackspace_cdn_url'`
+
+more info can be found here: http://guides.rubyonrails.org/asset_pipeline.html#cdns
+
+#### Django?
 
 ### Blogs and DB-powered content
 
