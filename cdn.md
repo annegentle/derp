@@ -1,43 +1,73 @@
 ## What is the difference between Rackspace CDN and Cloud Files CDN?
 
+Rackspace CDN just requires a web server, in any location, to serve content.  This could include Cloud Servers, Cloud Sites, Dedicated Servers with a Rackspace Cloud Account, or any other system internal or external to Rackspace.
+
 Cloud Files CDN requires files to be uploaded to a Cloud Files container. Then you enable the CDN on that container.
 
-Rackspace CDN just requires a web server, in any location, to serve content.  This could include Cloud Servers, Dedicated Servers (with a Cloud Account), or any other system internal or external to Rackspace.
   
 ### What are the new features?
 
 Powered by Akamai – A Best in Class Content Delivery Network
+
 Using Akamai’s industry leading network, Rackspace employs a custom map of over 200 edge locations across six continents, designed to meet the specific needs of Rackspace’s global customer footprint.  This map includes 77 North American locations, 36 European regions, 73 Asian, Middle Eastern and Oceania regions, and 15 South America regions.
- 
+
+
 Instant Provisioning
+
 Rackspace CDN service can be turned on in seconds, through the Rackspace Cloud Control Panel, or via the REST API and language bindings.  No professional services, ticket requests, or phone calls are needed to get your site up and running on one of the world’s fastest CDN networks.  
+
  
+
 Multiple Interface Options
+
 Rackspace CDN is fully supported via the Rackspace Cloud Control panel.  Customers can also interact with Rackspace CDN via our REST API or one of our Software Development Kits (SDK) in Ruby, PHP, Java, node.js, Python, or .NET.   
+
  
+
 Whole Site Delivery and Acceleration
+
 Rackspace CDN is more than just accelerating individual objects in storage.   Using origin pull technology and DNS, you can simply identify your website and content origin and the entire site will be accelerated.  Everything from images to style sheets can benefit from CDN.  With no long-term contracts, trying CDN with your entire site has never been easier.  
 
+
+
 Origin Protection
+
 Keeping your origin safe during a malicious attack is vital to the health of your website or application.  Rackspace CDN helps your prepare for the unknown by absorbing edge requests, whether good or bad.  Since all requests are first served by the edge, your origin won’t get the brunt force traffic associated with a DDOS attack.  This means your website can still serve good traffic while an attack is taking place, keeping your visitors engaged at all times.
 
 Custom SSL
+
 Serving content over https is quickly becoming standard for modern websites and applications.  Rackspace CDN gives users multiple options for using their own domain while serving over https, including SAN (Subject Name Alternative) certificates and dedicated certificates.  
 
+
+
 Access Controls To Protect Content
+
 Rackspace CDN can help you control who sees your content by setting access rules that are enforced on the edge.  Access rules can be set by geography and referring domain and help prevent unwanted linking and traffic from non-strategic regions.  
+
  
+
 Multiple Origins Flexibility
+
 Rackspace offers customers a full portfolio of public, dedicated, and private managed cloud solutions for your workload.  Rackspace CDN can use any of these resources as origins, with the flexibility to use multiple origins with a single website or domain.  If you want, you can even use Rackspace CDN with origins not hosted at Rackspace. 
+
  
+
 Dynamic Visitor Handling
+
 Not all web content is created equal.  Rackspace CDN will deliver both static and dynamic content.  Dynamic content that changes for every user or a set of users requires additional handling at the edge.  Rackspace CDN will allow users to set a TTL of zero for un-cachable content, and supports dynamic content handling features like cookies, header forwarding, and cross-origin resource sharing (CORS).  
+
  
+
 Keep Your Content Up-To-Date
+
 Rackspace CDN supports content TTLs (time to live) in seconds- all the way down to zero.  In addition, customers can submit requests any time they need to update content outside of the TTL timeframe.  Unlike other providers, these updates won’t cost extra since we know that keeping your content up-to-date on the edge is important.  
+
  
+
 Granular Control
+
 We know that web applications contain different types of data that require multiple edge rules.  For that reason, Rackspace CDN will allow you implement edge rules based on resource path, meaning your rules can apply to multiple levels of granularity, from the entire site to a specific file. 
+
 
 
 ### How do I move from Cloud Files CDN to Rackspace CDN?
