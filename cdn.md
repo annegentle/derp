@@ -1,8 +1,8 @@
 ## What is the difference between Rackspace CDN and Cloud Files CDN?
 
-Cloud Files CDN requires files to be uploaded to a Cloud Files container. Then you enable the CDN on that container.
+Rackspace CDN requires a web server, in any location, to serve content.  This could include Cloud Servers, Dedicated Servers (with a Cloud Account), or any other system internal or external to Rackspace.
 
-Rackspace CDN just requires a web server, in any location, to serve content.  This could include Cloud Servers, Dedicated Servers (with a Cloud Account), or any other system internal or external to Rackspace.
+Cloud Files CDN requires files to be uploaded to a Cloud Files container. Then you enable the CDN on that container.
   
 ### What are the new features?
 
@@ -58,23 +58,23 @@ Rackspace will help customers migrate from Cloud Files CDN to Rackspace CDN. Mor
 
 ### Using the Control Panel
 
-**How to set up a new CDN service**
+**How to create a new CDN service**
 
-1. You need your own DNS Domain name.  Rackspace CDN (CDNaaS) does not provide you with the domain rackcdn.com like Cloud Files CDN does.  This might change in the future.  In this example, I will use 'racked.me' as my domain, and 'cdn.racked.me' as my DNS CName.
+1. You need your own DNS domain name. Rackspace CDN (CDNaaS) does not provide you with the domain rackcdn.com like Cloud Files CDN does. This might change in the future. This example uses **customer1.com** as the domain, and **cdn.customer1.com** as the DNS CName.
 
-2. Go to the CDN option in REACH under Storage.
+2. In the Control Panel, go to the **CDN** option under **Storage**.
 
-3. Click "Create Service" button.
+3. Click the **Create Service** button.
 
-4. Setup a Human Readable "Service Name", the "Domain Name" will be the CName you will be using, and the Origin is a HTTP/HTTPS server that will respond to Origin Pull requests from the CDN Edge Nodes.
+4. Enter a human-readable **Service Name**, the **Domain Name** is the CName you are using, and the **Origin** is a HTTP/HTTPS server that responds to origin pull requests from the CDN edge nodes.
 
-5. From here, you are presented with the Service Details page with the CDN URL. Note: For your CDN service to work, you must create a CNAME record with your domain provider. The CDN domain for cdn.racked.me is cdn.racked.me.cdn319.raxcdn.com. If you use Rackspace to manage your cloud CDN entries. you can complete this task under Networking -> Cloud DNS. For more information, see the Knowledge Center article at https://www.rackspace.com/knowledge_center/article/change-dns-to-enable-rackspace-cdn.
+5. From here, you are presented with the **Service Details** page with the CDN URL. Note: For your CDN service to work, you must create a CNAME record with your domain provider. The CDN domain for **cdn.customer1.com** is **cdn.customer1.cdn319.raxcdn.com**. If you use Rackspace to manage your Rackspace CDN entries, you can complete this task under **Networking -> Cloud DNS**. For more information, see the Knowledge Center article at https://www.rackspace.com/knowledge_center/article/change-dns-to-enable-rackspace-cdn.
 
-6. Now that you have the CDN Domain Name (cdn.racked.me.cdn319.raxcdn.com), you need to create the DNS CName record pointing to that Domain name. Because this can be done through the customer's own DNS Servers, or Cloud DNS, this step is not included here.
+6. Now that you have the CDN Domain Name (**cdn.customer1.cdn319.raxcdn.com**), you need to create the DNS CName record pointing to that Domain name. Because this can be done through the customer's own DNS Servers, or Cloud DNS, this step is not included here.
 
-7. Once everything is setup, the default Origin (http://104.239.140.241/image.png) should display the same as the CDN Domain (http://cdn.racked.me/image.png).
+7. Once everything is setup, the default Origin should display the same as the CDN Domain.
 
-Note: If you've just set this up, the CDN configuration might not have pushed to Akamai yet. You might get a text web page similar to the following: Service Unavailable - DNS failure.
+Note: If you've just created the service, the CDN configuration might not have pushed to Akamai yet. You might get a text web page similar to the following: Service Unavailable - DNS failure.
 
 ### Using the API
 
@@ -97,6 +97,15 @@ For information about SSL certificates, see the Knowledge Center article at http
 For information about the Rackspace CDN edge rules, see the Knowledge Center article at https://www.rackspace.com/knowledge_center/article/rackspace-cdn-edge-rules.
 
 ## Known Limitations? (email to Megan, Mary, and Amit on 4/21 for this info)
+
+Following are some limitations to be aware of:
+
+- Restricted to 100 domains per service.
+
+- Allows only HTTP GET requests (for download).
+
+- Does not handle chunked streaming like the Cloud Files CDN Streaming URLs.
+
 
 ### SSL?
 
