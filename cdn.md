@@ -1,157 +1,120 @@
 ## What is the difference between Rackspace CDN and Cloud Files CDN?
 
-Rackspace CDN requires a web server, in any location, to serve content.  This could include Cloud Servers, Dedicated Servers (with a Cloud Account), or any other system internal or external to Rackspace.
+Rackspace CDN just requires a web server, in any location, to serve content. This could include Cloud Servers, Cloud Sites, Dedicated Servers with a Rackspace Cloud Account, or any other system internal or external to Rackspace.
 
 Cloud Files CDN requires files to be uploaded to a Cloud Files container. Then you enable the CDN on that container.
-  
+
 ### What are the new features?
 
-**Powered by Akamai – A Best in Class Content Delivery Network**
 
-Using Akamai’s industry leading network, Rackspace employs a custom map of over 200 edge locations across six continents, designed to meet the specific needs of Rackspace’s global customer footprint.  This map includes 77 North American locations, 36 European regions, 73 Asian, Middle Eastern and Oceania regions, and 15 South America regions.
+#### Powered by Akamai Content Delivery Network
 
-**Instant Provisioning**
+Using Akamai’s network, Rackspace employs a custom map of over 200 edge locations across six continents, designed to meet the specific needs of Rackspace customers. This map includes 77 North American locations, 36 European regions, 73 Asian, Middle Eastern and Oceania regions, and 15 South America regions.
 
-Rackspace CDN service can be turned on in seconds, through the Rackspace Cloud Control Panel, or via the REST API and language bindings.  No professional services, ticket requests, or phone calls are needed to get your site up and running on one of the world’s fastest CDN networks.
+#### Instant Provisioning
 
-**Multiple Interface Options**
+Rackspace CDN service can be turned on in seconds, through the Rackspace Cloud Control Panel, or via the REST API and language bindings. No professional services, ticket requests, or phone calls are needed to get your site up and running on one of the world’s fastest CDN networks.
 
-Rackspace CDN is fully supported via the Rackspace Cloud Control panel.  Customers can also interact with Rackspace CDN via our REST API or one of our Software Development Kits (SDK) in Ruby, PHP, Java, node.js, Python, or .NET.
+#### Multiple Interface Options
 
-**Whole Site Delivery and Acceleration**
+Rackspace CDN is fully supported via the Rackspace Cloud Control panel. Customers can also interact with Rackspace CDN via our REST API or one of our Software Development Kits (SDK) in Ruby, PHP, Java, node.js, Python, or .NET.
 
-Rackspace CDN is more than just accelerating individual objects in storage.   Using origin pull technology and DNS, you can simply identify your website and content origin and the entire site will be accelerated.  Everything from images to style sheets can benefit from CDN.  With no long-term contracts, trying CDN with your entire site has never been easier.
+#### Whole Site Delivery and Acceleration
 
-**Origin Protection**
+Rackspace CDN is more than just accelerating individual objects in storage. Using origin pull technology and DNS, you can simply identify your website and content origin and the entire site will be accelerated. Everything from images to style sheets can benefit from CDN. With no long-term contracts, trying CDN with your entire site has never been easier.
 
-Keeping your origin safe during a malicious attack is vital to the health of your website or application.  Rackspace CDN helps your prepare for the unknown by absorbing edge requests, whether good or bad.  Since all requests are first served by the edge, your origin won’t get the brunt force traffic associated with a DDOS attack.  This means your website can still serve good traffic while an attack is taking place, keeping your visitors engaged at all times.
+#### Origin Protection
 
-**Custom SSL**
+Keeping your origin safe during a malicious attack is vital to the health of your website or application. Rackspace CDN helps your prepare for the unknown by absorbing edge requests, whether good or bad. Since all requests are first served by the edge, your origin won’t get the brunt force traffic associated with a DDOS attack. This means your website can still serve good traffic while an attack is taking place, keeping your visitors engaged at all times.
 
-Serving content over https is quickly becoming standard for modern websites and applications.  Rackspace CDN gives users multiple options for using their own domain while serving over https, including SAN (Subject Name Alternative) certificates and dedicated certificates.
+#### Custom SSL
 
-**Access Controls To Protect Content**
+Serving content over https is quickly becoming standard for modern websites and applications. Rackspace CDN gives users multiple options for using their own domain while serving over https, including SAN (Subject Name Alternative) certificates and dedicated certificates.
 
-Rackspace CDN can help you control who sees your content by setting access rules that are enforced on the edge.  Access rules can be set by geography and referring domain and help prevent unwanted linking and traffic from non-strategic regions.
+#### Access Controls To Protect Content
 
-**Multiple Origins Flexibility**
+Rackspace CDN can help you control who sees your content by setting access rules that are enforced on the edge. Access rules can be set by geography and referring domain and help prevent unwanted linking and traffic from non-strategic regions.
 
-Rackspace offers customers a full portfolio of public, dedicated, and private managed cloud solutions for your workload.  Rackspace CDN can use any of these resources as origins, with the flexibility to use multiple origins with a single website or domain.  If you want, you can even use Rackspace CDN with origins not hosted at Rackspace.
+#### Multiple Origins Flexibility
 
-**Dynamic Visitor Handling**
+Rackspace offers customers a full portfolio of public, dedicated, and private managed cloud solutions for your workload. Rackspace CDN can use any of these resources as origins, with the flexibility to use multiple origins with a single website or domain. If you want, you can even use Rackspace CDN with origins not hosted at Rackspace.
 
-Not all web content is created equal.  Rackspace CDN will deliver both static and dynamic content.  Dynamic content that changes for every user or a set of users requires additional handling at the edge.  Rackspace CDN will allow users to set a TTL of zero for uncachable content, and supports dynamic content handling features like cookies, header forwarding, and cross-origin resource sharing (CORS).
+#### Dynamic Visitor Handling
 
-**Keep Your Content Up-To-Date**
+Not all web content is created equal. Rackspace CDN will deliver both static and dynamic content. Dynamic content that changes for every user or a set of users requires additional handling at the edge. Rackspace CDN will allow users to set a TTL of zero for un-cachable content, and supports dynamic content handling features like cookies, header forwarding, and cross-origin resource sharing (CORS).
 
-Rackspace CDN supports content TTLs (time to live) in seconds - all the way down to zero.  In addition, customers can submit requests any time they need to update content outside of the TTL timeframe.  Unlike other providers, these updates won’t cost extra since we know that keeping your content up-to-date on the edge is important.
+#### Keep Your Content Up-To-Date
 
-**Granular Control**
+Rackspace CDN supports content TTLs (time to live) in seconds- all the way down to zero. In addition, customers can submit requests any time they need to update content outside of the TTL timeframe. Unlike other providers, these updates won’t cost extra since we know that keeping your content up-to-date on the edge is important.
 
-We know that web applications contain different types of data that require multiple edge rules.  For that reason, Rackspace CDN will allow you implement edge rules based on resource path, meaning your rules can apply to multiple levels of granularity, from the entire site to a specific file. 
+#### Granular Control
+
+We know that web applications contain different types of data that require multiple edge rules. For that reason, Rackspace CDN allows you implement edge rules based on resource path, meaning your rules can apply to multiple levels of granularity, from the entire site to a specific file.
+
 
 ### How do I move from Cloud Files CDN to Rackspace CDN?
-
-Rackspace will help customers migrate from Cloud Files CDN to Rackspace CDN. More information will be available soon.
+Rackspace plans to migrate customers from Cloud Files CDN to Rackspace CDN.
 
 ## How do I get started using the Rackspace CDN?
 
-### Using the Control Panel
+Use the Control Panel, API, or supported SDK. More details below.
 
-**How to create a new CDN service**
+### Control Panel Overview
 
-1. You need your own DNS domain name. Rackspace CDN (CDNaaS) does not provide you with the domain rackcdn.com like Cloud Files CDN does. This might change in the future. This example uses **customer1.com** as the domain, and **cdn.customer1.com** as the DNS CName.
+How to set up a new CDN service
+1. You need your own DNS Domain name. Rackspace CDN (CDNaaS) does not provide you with the domain rackcdn.com like Cloud Files CDN does. This might change in the future. In this example, I will use 'racked.me' as my domain, and 'cdn.racked.me' as my DNS CName.
 
-2. In the Control Panel, go to the **CDN** option under **Storage**.
+2. Go to the CDN option in REACH under Storage.
 
-3. Click the **Create Service** button.
+3. Click "Create Service" button.
 
-4. Enter a human-readable **Service Name**, the **Domain Name** is the CName you are using, and the **Origin** is a HTTP/HTTPS server that responds to origin pull requests from the CDN edge nodes.
+4. Setup a Human Readable "Service Name", the "Domain Name" will be the CName you will be using, and the Origin is a HTTP/HTTPS server that will respond to Origin Pull requests from the CDN Edge Nodes.
 
-5. From here, you are presented with the **Service Details** page with the CDN URL. Note: For your CDN service to work, you must create a CNAME record with your domain provider. The CDN domain for **cdn.customer1.com** is **cdn.customer1.cdn319.raxcdn.com**. If you use Rackspace to manage your Rackspace CDN entries, you can complete this task under **Networking -> Cloud DNS**. For more information, see the Knowledge Center article at https://www.rackspace.com/knowledge_center/article/change-dns-to-enable-rackspace-cdn.
+5. From here, you will be presented with the Service Details page with the CDN URL.
+Note: For your CDN service to work, you must create a CNAME record with your domain provider. The CDN domain for cdn.racked.me is cdn.racked.me.cdn319.raxcdn.com. If you use Rackspace to manager your Cloud DNS entries, you can complete this task under Networking -> Cloud DNS.
 
-6. Now that you have the CDN Domain Name (**cdn.customer1.cdn319.raxcdn.com**), you need to create the DNS CName record pointing to that Domain name. Because this can be done through the customer's own DNS Servers, or Cloud DNS, this step is not included here.
+6. Now that you have the CDN Domain Name (cdn.racked.me.cdn319.raxcdn.com), you need to create the DNS CName record pointing to that Domain name.
 
-7. Once everything is setup, the default Origin should display the same as the CDN Domain.
+Because this can be done through the customer's own DNS Servers, or Cloud DNS, this step is not included here.
 
-Note: If you've just created the service, the CDN configuration might not have pushed to Akamai yet. You might get a text web page similar to the following: Service Unavailable - DNS failure.
+7. Once everything is setup, the default Origin (http://104.239.140.241/image.png) should display the same as the CDN Domain (http://cdn.racked.me/image.png).
+
+Note: If you've just set this up, the CDN configuration might not have pushed to Akamai yet. You might get a text web page similar to the following: Servuce Unavailable - DNS failure.
 
 ### Using the API
-
-For information about getting started using the API, see the Rackspace CDN Getting Started Guide at http://docs.rackspace.com/cdn/api/v1.0/cdn-gettingstarted/content/Overview.html. Additional information about the API is at http://docs.rackspace.com/cdn/api/v1.0/cdn-devguide/content/Overview.html.
+For information about getting started using the API, see Rackspace CDN Getting Started Guide at http://docs.rackspace.com/cdn/api/v1.0/cdn-gettingstarted/content/Overview.html.
 
 ### Using the SDKs
-
 For information about using the SDKs available for Rackspace CDN, see https://developer.rackspace.com/sdks/ (SDKs will be available here when Rackspace CDN goes UA). (For now, see https://gist.github.com/ycombinator/175d316694965a9ad2d7 for instructions about how to download and use the SDKs.)
 
-### Command line tools
-
+### Command line tools?
 Currently, there is no CLI for Rackspace CDN.
 
 ## How do I get an SSL certificate for my domain that is compatible with Rackspace CDN?
+### Steps
+    Note: Key issue, your cert has to be signed by the Akamai CA
 
-For information about SSL certificates, see the Knowledge Center article at https://www.rackspace.com/knowledge_center/article/rackspace-cdn-secure-delivery-options.
+## Can I Pre-load Content So It's Ready for a Big Event?
 
-## Rackspace CDN edge rules
+Akamai does not offer pre-loading or pre-warming of content but you can use pre-fetching and TTL settings in combination to meet this use case. Refer to https://community.akamai.com/community/web-performance/blog/2015/02/04/content-pre-loading-pre-warming-at-akamai for more details.
 
-For information about the Rackspace CDN edge rules, see the Knowledge Center article at https://www.rackspace.com/knowledge_center/article/rackspace-cdn-edge-rules.
-
-## Known Limitations? (email to Megan, Mary, and Amit on 4/21 for this info)
-
-Following are some limitations to be aware of:
-
-- Restricted to 100 domains per service.
-
-- Allows only HTTP GET requests (for download).
-
-- Does not handle chunked streaming like the Cloud Files CDN Streaming URLs.
-
-
-### SSL?
+## Known Limitations
+### Unclear (SSL?)
 
 ## Basic Use Cases for Rackspace CDN
+Basic use cases for Rackspace CDN are described at https://one.rackspace.com/display/atlanta/Cloud+CDN+Use+Cases. Additional use cases are described below.
 
-Following are some basic use cases for Rackspace CDN:
+### Static asset compilation for a web app?
 
-1. A customer has their own domain name and they want to enable CDN to accelerate their website.
-
-2. A customer has their own domain name and they want to enable CDN to accelerate their website. They have their image stored in Cloud Files and want to serve them to the website.
-
-3. A customer does not have their own domain name and they want to enable CDN to accelerate their website. They have their image stored in Cloud Files and want to serve them to the website.
-
-4. A customer wants to enable CDN to accelerate their website. They have videos stored on one or more Cloud Servers and want to stream them to their website.
-
-5. A customer wants to run a static website through Cloud Files.
-
-6. A customer has enabled CDN and wants to customize the TTL for their host name.
-
-7. A customer has enabled CDN and wants to customize the TTL for their video files.
-
-8. A customer has enabled CDN and wants to purge a file from the edge node cache.
-
-9. A customer has their own domain name and wants to enable CDN to enable their website. They want to set rules on who can access their cached content.
-
-Additional use cases are described in the following sections.
-
-### Using our CDN with your favorite web framework
-
-#### Ruby on Rails
-
-Simply create a new cdn service and you will be given a url that you can use with rails. in your `production.rb` file, add the following:
-
-`config.action_controller.asset_host = 'rackspace_cdn_url'`
-
-more info can be found here: http://guides.rubyonrails.org/asset_pipeline.html#cdns
-
-#### Django?
+### Ruby on Rails?
 
 ### Blogs and DB-powered content
 
-Instead having your web servers render content for *every* unique visit, you can use a CDN to deliver cached content to website visitors instead. This will reduce the overall load on your local web server and database because HTML is being served in a local edge location. Apart from this CPU efficiency, users will also get content faster, since the latency has improved.
+Instead having your web servers render content for *every* unique visit, you can use a CDN to deliver cached content to website visitors instead. This will reduce the overall load on your local web server and database - because HTML is being served in a local edge location. Apart from this CPU efficiency, users will also get content faster, since the latency has improved.
 
 ### eCommerce stores
 
-For eCommerce stores with lots of photos and static assets, rendering product pages can involve paying for a lot of outgoing bandwidth. If your eCommerce platform renders images on the fly (for custom dimensions, for example), this gets even more expensive. Rackspace CDN allows you to selectively cache certain subdomains or URL patterns to edge locations - allowing assets.mydomain.com, for example, to be fully cacheable. Users will now hit the edge location, rather than your web servers.
+For eCommerce stores with lots of photos and static assets, rendering product pages can involve paying for a lot of outgoing bandwidth. If your eCommerce platform renders images on the fly (for custom dimensions, for example), this gets even more expensive. Rackspace CDN allows you to selectively cache certain sub-domains or URL patterns to edge locations - allowing assets.mydomain.com, for example, to be fully cacheable. Users will now hit the edge location, rather than your web servers.
 
 ### Video streaming
 
@@ -159,4 +122,6 @@ If your site broadcasts live feeds or video uploads, having to cope with spikes 
 
 ### Static Site hosting?
 
-Like Cloud Files CDN, you can upload a static HTML website to Cloud Files and put a CDN in front of it. This is a very simple and scalable way of rendering simple content without having to pay for and maintain web servers and associated software. 
+Like Cloud Files CDN, you can upload a static HTML website to Cloud Files and put a CDN in front of it. This is a very simple and scalable way of rendering simple content without having to pay for and maintain web servers and associated software.
+
+
